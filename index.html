@@ -1,28 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>AurisSwap</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AurisSwap | Decentralized Exchange</title>
+  <meta name="description" content="AurisSwap is a decentralized exchange where AurisCoin is the core asset. Swap, stake and farm with transparent fees.">
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f19;color:#e8eefc}
-    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center}
-    .card{max-width:520px;background:#121a2c;border-radius:16px;padding:28px;text-align:center}
-    h1{margin-top:0}
-    p{color:#b9c7e6}
-    a.btn{display:inline-block;margin:10px;padding:12px 18px;border-radius:12px;background:#2d6cff;color:#fff;text-decoration:none;font-weight:700}
-    a.link{display:block;margin-top:14px;color:#7bb1ff}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f1a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    a { color: #4fd1c5; text-decoration: none; }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: radial-gradient(circle at top, #1a233a, #0b0f1a);
+    }
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #4fd1c5;
+      color: #0b0f1a;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #131a2e;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      background: #080b14;
+      font-size: 14px;
+      opacity: 0.7;
+    }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <div class="card">
-      <h1>AurisSwap</h1>
-      <p>The decentralized exchange built around AurisCoin.</p>
 
-      <a class="btn" href="app.html">Launch App</a>
-      <a class="link" href="fees.html">View Fees</a>
+<body>
+
+<header>
+  <h1>AurisSwap</h1>
+  <p>
+    A decentralized exchange where <strong>AurisCoin</strong> is the core asset.
+    Swap, stake and farm with transparent fees and long-term incentives.
+  </p>
+<a class="btn" href="app.html">Launch App</a>
+<a class="btn" href="roadmap.html" style="margin-left:10px;background:#ffffff;color:#0b0f1a;">Roadmap</a>
+<a class="btn" href="projects.html" style="margin-left:10px;background:#ffffff;color:#0b0f1a;">For Projects</a>
+<a class="btn" href="docs.html" style="margin-left:10px;background:#ffffff;color:#0b0f1a;">How it Works</a>
+<a class="btn" href="treasury.html" style="margin-left:10px;background:#ffffff;color:#0b0f1a;">Treasury</a>
+<a class="btn" href="fees.html" style="margin-left:10px;background:#ffffff;color:#0b0f1a;">View Fees</a>
+
+</header>
+
+<section>
+  <h2>What is AurisSwap?</h2>
+  <p>
+    AurisSwap is a decentralized exchange (DEX) designed to support
+    sustainable liquidity, real holders and long-term growth.
+    AurisCoin plays a central role in every core operation.
+  </p>
+</section>
+
+<section>
+  <h2>Why AurisCoin?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Core Pair Asset</h3>
+      <p>AurisCoin is required in key trading pairs, increasing organic demand.</p>
+    </div>
+    <div class="card">
+      <h3>Fee Incentives</h3>
+      <p>Reduced fees and exclusive benefits for AurisCoin holders.</p>
+    </div>
+    <div class="card">
+      <h3>Staking & Farming</h3>
+      <p>Earn rewards by staking or farming AurisCoin in dedicated pools.</p>
     </div>
   </div>
+</section>
+
+<section>
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card">Token Swaps</div>
+    <div class="card">Liquidity Pools</div>
+    <div class="card">Staking</div>
+    <div class="card">Yield Farming</div>
+    <div class="card">Microcap Projects</div>
+    <div class="card">Transparent Treasury</div>
+  </div>
+</section>
+
+<section>
+  <h2>Fees (Preview)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Swap Fee</h3>
+      <p>0.30%</p>
+    </div>
+    <div class="card">
+      <h3>Liquidity Removal</h3>
+      <p>0.30%</p>
+    </div>
+    <div class="card">
+      <h3>Pool Creation</h3>
+      <p>Fixed fee (AurisCoin)</p>
+    </div>
+  </div>
+</section>
+
+<section id="app">
+  <h2>Launch App</h2>
+  <p>
+    AurisSwap is currently under active development.
+    The first version of the app will be released soon.
+  </p>
+</section>
+
+<footer>
+  © 2025 AurisSwap. All rights reserved.<br>
+  Decentralized. Transparent. Built for the long term.<br><br>
+  <a href="#" target="_blank">X (Twitter)</a> ·
+  <a href="#" target="_blank">Telegram</a> ·
+  <a href="#" target="_blank">Discord</a>
+</footer>
+
+<br><br>
+<a href="disclaimer.html">Disclaimer</a>
+
+
 </body>
 </html>
