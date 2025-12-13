@@ -1,51 +1,28 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AurisSwap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0b0f19;color:#e8eefc}
-    .wrap{max-width:960px;margin:0 auto;padding:28px}
-    .card{background:#121a2c;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;margin-top:16px}
-    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    button{background:#2d6cff;color:#fff;border:0;border-radius:12px;padding:12px 14px;font-weight:700;cursor:pointer}
-    button.secondary{background:#23304d}
-    input{background:#0b0f19;color:#e8eefc;border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:10px 12px;min-width:220px}
-    .muted{color:#a9b7d6;font-size:13px}
-    .ok{color:#71f0b5}
-    .bad{color:#ff7a90}
-    a{color:#7bb1ff}
-    code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0f19;color:#e8eefc}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center}
+    .card{max-width:520px;background:#121a2c;border-radius:16px;padding:28px;text-align:center}
+    h1{margin-top:0}
+    p{color:#b9c7e6}
+    a.btn{display:inline-block;margin:10px;padding:12px 18px;border-radius:12px;background:#2d6cff;color:#fff;text-decoration:none;font-weight:700}
+    a.link{display:block;margin-top:14px;color:#7bb1ff}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>AurisSwap</h1>
-    <p class="muted">V1 Web (base) — conectar wallet + detectar red. Luego enchufamos Router/Factory V2.</p>
-
     <div class="card">
-      <div class="row">
-        <button id="btnConnect">Connect Wallet</button>
-        <button id="btnDisconnect" class="secondary">Disconnect</button>
-        <span id="status" class="muted">Estado: desconectado</span>
-      </div>
-      <p class="muted">Wallet: <code id="addr">-</code></p>
-      <p class="muted">Network: <code id="net">-</code></p>
-    </div>
+      <h1>AurisSwap</h1>
+      <p>The decentralized exchange built around AurisCoin.</p>
 
-    <div class="card">
-      <h2>Próximo</h2>
-      <ul class="muted">
-        <li>Conectar a BNB Chain (56)</li>
-        <li>Agregar Router/Factory V2 propios</li>
-        <li>Swap real (AURIS ↔ WBNB/USDT)</li>
-      </ul>
-      <p class="muted">Dominio: <a href="https://aurisswap.com" target="_blank" rel="noreferrer">aurisswap.com</a></p>
+      <a class="btn" href="app.html">Launch App</a>
+      <a class="link" href="fees.html">View Fees</a>
     </div>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
-  <script src="./js/app.js"></script>
 </body>
 </html>
